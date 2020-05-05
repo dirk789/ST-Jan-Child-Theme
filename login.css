@@ -1,0 +1,124 @@
+body {
+    background: #e6f3f6;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+#login {
+    flex-flow: row wrap;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+
+.login h1 {
+	text-align: center;
+	width: 50%;
+	background: url(https://images.unsplash.com/photo-1547419543-db0732b9dd06?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60);
+	background-size: cover;
+    background-position: center center;
+    position: relative;
+    overflow: hidden;
+}
+
+.login h1 a {
+    display: none;
+
+}
+
+.login form {
+	border: 0;
+    border-radius: 0px;
+    padding: 0;
+    padding-left: 2%;
+    padding-right: 3%;
+	font-weight: bold;
+	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+	width: 45%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+    margin-top: 0;
+    padding-bottom: 25px;
+    overflow: hidden;
+}
+
+#loginform::before {
+	/* content: url(https://i.imgur.com/fbtF77U.png); */
+	text-align: center;
+	margin-bottom: 5%;
+	width: 100%;
+	height: 25px;
+	/* left: 50%; */
+	/* position: relative; */
+	/* left: 50%; */
+	background: url(https://i.imgur.com/fbtF77U.png);
+	background-position: center;
+	background-size: 190px;
+	content: '';
+	background-repeat: no-repeat;
+}
+
+.login .button-primary {
+    float: left;
+    margin-top: 20px;
+    background: none;
+    color: black;
+    font-weight: bold;
+    border-radius: 0px;
+    border-color: black;
+}
+
+.wp-core-ui .button-primary.focus, .wp-core-ui .button-primary.hover, .wp-core-ui .button-primary:focus, .wp-core-ui .button-primary:hover {
+    background: black;
+}
+
+.wp-core-ui .button-group.button-large .button, .wp-core-ui .button.button-large {
+    width: 100%;
+}
+
+input[type="color"], input[type="date"], input[type="datetime-local"], input[type="datetime"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], select, textarea {
+    border-radius: 0;
+    border: 0;
+}
+
+.login form .input, .login form input[type="checkbox"], .login input[type="text"] {
+    background: #F2F2F2;
+}
+
+#nav {
+    display: none;
+}
+
+#backtoblog {
+    display: none;
+}
+
+.wp-core-ui .button, .wp-core-ui .button-secondary {
+    color: black;
+}
+
+@media (max-width: 450px) {
+    #login {
+        flex-flow: row wrap;
+    }
+
+    .login h1 {
+        height: 350px;
+        width: 100%;
+    }
+
+    .login form {
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+    }
+    body {
+        background: white;
+    }
+}
