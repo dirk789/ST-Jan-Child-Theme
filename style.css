@@ -90,12 +90,12 @@ Template: Divi
 
 .mec-start-date-label {
     font-weight: bolder;
-    color: white;
+    color: #4CBDFC;
 }
 
 .mec-end-date-label {
     font-weight: bolder;
-    color: white;
+    color: #4CBDFC;
 }
 
 /* Homepage fotos */
@@ -124,3 +124,10 @@ Template: Divi
 }
 
 /*New comment test */
+
+#login_error {
+    position: fixed;
+    z-index: 9;
+    left: 50%;
+    top: 10%;
+}
