@@ -103,6 +103,11 @@ input[type="color"], input[type="date"], input[type="datetime-local"], input[typ
     color: black;
 }
 
+.login #login_error {
+    border-left-color: black;
+    position: fixed;
+}
+
 @media (max-width: 450px) {
     #login {
         flex-flow: row wrap;
