@@ -15,7 +15,7 @@ Template: Divi
     position: relative;
 }
 
-.home #main-header {
+.home #main-header, .home .sub-menu {
     background: white;
 }
 
