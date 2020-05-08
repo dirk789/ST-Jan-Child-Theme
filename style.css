@@ -15,7 +15,7 @@ Template: Divi
     position: relative;
 }
 
-.home #main-header, .home .sub-menu {
+.home #main-header, .home #main-header .nav li ul, .home .et-search-form, .home #main-header .et_mobile_menu {
     background: white;
 }
 
