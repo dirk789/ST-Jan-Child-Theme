@@ -291,5 +291,67 @@ ul.et_pb_tabs_controls {
    #main-header #mobile_menu.et_mobile_menu li.current-menu-item > a {
     font-weight: bolder;
    }
+
+   /* 2 columns mobile */
+   /* Make Divi Centered and Centered Inline Logo Header Bars Look Like The Default Header Bar On Mobile */
+@media all and (max-width: 980px) {
+    /* align header container text to left */
+        .et_header_style_centered #main-header .container,
+        .et_header_style_split #main-header .container {
+            text-align: left;
+        }
+    /* set max width for logo container and bring it above the navigation bar to make it clickable */
+        .et_header_style_centered header#main-header .logo_container,
+        .et_header_style_split header#main-header .logo_container {
+            position:relative;
+            z-index: 2;
+            max-width: 50%;
+        }
+    /* move split header logo to left */
+        .et_header_style_split header#main-header .logo_container {
+            float: left;
+        }
+    /* prevent the split header logo from shrinking by increasing its max width */
+        .et_header_style_split #logo {
+            max-width: 100%;
+        }
+    /* adjust top navigation alignment */
+        .et_header_style_centered #main-header div#et-top-navigation,
+        .et_header_style_split #main-header div#et-top-navigation {
+            position: absolute;
+        }
+    /* make "select page bg color transparent" */
+        .et_header_style_centered #main-header .mobile_nav,
+        .et_header_style_split #main-header .mobile_nav {
+             background-color: rgba(0, 0, 0, 0); 
+        }
+    /* remove mobile_nav left and right padding */
+        .et_header_style_centered #main-header .mobile_nav,
+        .et_header_style_split #main-header .mobile_nav {
+             padding: 5px 0px;
+        }
+    /* remove unnecessary top margin */
+        .et_header_style_centered #et_mobile_nav_menu,
+        .et_header_style_split #et_mobile_nav_menu {
+            margin-top: 0px;
+        }
+    /* hide "select page" container */
+        .et_header_style_centered #main-header .mobile_nav .select_page,
+        .et_header_style_split #main-header .mobile_nav .select_page {
+            display: none;
+        }
+    /* adjust vertical and right alignment of the mobile menu bar */
+        .et_header_style_centered #main-header .mobile_menu_bar,
+        .et_header_style_split #main-header .mobile_menu_bar {
+            position: relative;
+            right: 0px;
+            text-align: right;
+        }
+    /* adjust dropdown menu top offset */
+        .et_header_style_centered #main-header .et_mobile_menu,
+        .et_header_style_split #main-header .et_mobile_menu {
+            top: 63px;
+        }
+    }
    
   /* END NEW MENU ON MOBILE */
