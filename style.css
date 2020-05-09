@@ -136,3 +136,20 @@ Template: Divi
     left: 50%;
     top: 10%;
 }
+
+/* Style the Divi tabs */
+ul.et_pb_tabs_controls {
+    background: white;
+  }
+  
+  .et_pb_tab_active {
+    border-bottom: 5px solid #F2994A;
+  }
+  
+  .et_pb_tabs_controls li {
+    border-right: none;
+  }
+  
+  ul.et_pb_tabs_controls::after { 
+   border: none; 
+  }
