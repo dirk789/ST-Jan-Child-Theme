@@ -130,12 +130,7 @@ Template: Divi
 
 /*New comment test */
 
-#login_error {
-    position: fixed;
-    z-index: 9;
-    left: 50%;
-    top: 10%;
-}
+
 
 /* Style the Divi tabs */
 ul.et_pb_tabs_controls {

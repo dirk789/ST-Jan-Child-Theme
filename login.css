@@ -108,6 +108,28 @@ input[type="color"], input[type="date"], input[type="datetime-local"], input[typ
     position: fixed;
 }
 
+.message {
+    position: fixed;
+    width: 100%;
+    left: 50%;
+}
+
+#login_error {
+    position: fixed;
+    z-index: 9;
+    left: 50%;
+    top: 10%;
+}
+
+.login #login_error, .login .message, .login .success {
+    border-left: 0px;
+    padding: 12px;
+    margin-left: 0;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,.1);
+}
+
 @media (max-width: 450px) {
     #login {
         flex-flow: row wrap;
