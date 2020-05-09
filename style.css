@@ -128,9 +128,11 @@ Template: Divi
     }
 }
 
-/*New comment test */
+/* Style icons */
 
-
+.person ion-icon {
+    margin-right: 6px;
+}
 
 /* Style the Divi tabs */
 ul.et_pb_tabs_controls {
