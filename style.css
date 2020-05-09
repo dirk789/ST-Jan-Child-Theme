@@ -352,6 +352,10 @@ ul.et_pb_tabs_controls {
         .et_header_style_split #main-header .et_mobile_menu {
             top: 63px;
         }
+
+        #logo {
+            margin-left: 20%;
+        }
     }
    
   /* END NEW MENU ON MOBILE */
