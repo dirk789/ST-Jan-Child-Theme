@@ -126,8 +126,10 @@ input[type="color"], input[type="date"], input[type="datetime-local"], input[typ
     padding: 12px;
     margin-left: 0;
     margin-bottom: 20px;
-    background-color: #fff;
+    background-color: black;
     box-shadow: 0 10px 10px 0 rgba(0,0,0,.1);
+    color: white;
+    font-weight: bolder;
 }
 
 @media (max-width: 450px) {
