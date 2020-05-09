@@ -144,6 +144,14 @@ Template: Divi
     font-weight: bolder;
 }
 
+
+/* Footer */
+#footer-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
 /* Style the Divi tabs */
 ul.et_pb_tabs_controls {
     background: white;
