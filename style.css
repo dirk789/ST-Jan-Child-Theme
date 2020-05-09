@@ -153,3 +153,143 @@ ul.et_pb_tabs_controls {
   ul.et_pb_tabs_controls::after { 
    border: none; 
   }
+
+  /* NEW DIVI MENU ON MOBILE */
+  @media screen and (max-width: 980px) {
+    .container { 
+    width: 100% !important;
+    }
+    .et_header_style_left .logo_container{
+    padding-left: 25px;
+    }
+    .et_header_style_centered #main-header .mobile_nav {
+    background-color: transparent;
+    }
+    .mobile_nav.closed .select_page {
+    display: none;
+    }
+    .et-fixed-header#main-header {
+    background-color: transparent !important;
+    }
+   }
+   .et_mobile_menu {
+    top: 0 !important;
+    border-top: 3px solid #283fc0 !important;;
+    background-color: #fff !important;
+    padding: 20% 0;
+   }
+   .et_mobile_menu li a {
+    text-align: center;
+    font-size: .8em;
+    border: 0;
+    padding: 15px 0;
+    letter-spacing: 1px;
+   }
+   .mobile_nav ul#mobile_menu .current_page_item > a {
+    color: #283fc0;
+   }
+   .mobile_nav ul#mobile_menu li ul li a {
+    font-size: .8em !important;
+    margin: auto;
+    color: #363636 !important;
+    padding-top: 0.2em;
+   }
+   .et_mobile_menu li a:hover {
+    color: #999;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+   }
+   .mobile_menu_bar:before {
+    padding-right: 25px;
+    color: #363636 !important;
+   }
+   .mobile_nav.opened .mobile_menu_bar:before {
+    content: "\4d";
+    z-index: 99999;
+   }
+   
+   /* NESTING MOBILE MENU SETTINGS */
+   #et_mobile_nav_menu .mobile_nav.opened .mobile_menu_bar::before {
+    content: '\4d';
+   }
+   
+   #top-menu .menu-item-has-children .menu-item-has-children > a:first-child::after, 
+   #et-secondary-nav .menu-item-has-children .menu-item-has-children > a:first-child::after {
+    content: '5'; 
+   }
+   
+   #main-header #mobile_menu.et_mobile_menu .menu-item-has-children {
+    position: relative; 
+   }
+   
+   #main-header #mobile_menu.et_mobile_menu .sub-menu-toggle {
+    position: absolute;
+    background-color: rgba(0,0,0,0.03);
+    z-index: 1;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 50%;
+    top: 6px;
+    right: 10px;
+    cursor: pointer;
+    text-align: center;
+   }
+   
+   #main-header #mobile_menu.et_mobile_menu .sub-menu-toggle.popped {
+    background-color: rgba(0,0,0,0.1);
+   }
+   
+   #main-header #mobile_menu.et_mobile_menu .sub-menu-toggle::before {
+    font-family: "ETmodules" !important;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 36px;
+    font-size: 24px;
+    text-transform: none;
+    speak: none;
+    content: '\33';
+   }
+   
+   #main-header #mobile_menu.et_mobile_menu .sub-menu-toggle.popped::before {
+    content: '\32';
+   }
+   
+   #main-header #mobile_menu.et_mobile_menu .sub-menu-toggle ~ ul.sub-menu {
+    display: none !important;
+    padding-left: 0;
+   }
+   
+   #main-header #mobile_menu.et_mobile_menu .sub-menu-toggle.popped ~ ul.sub-menu {
+    display: block !important;
+    background-color: rgba(0,0,0,0.03);
+   }
+   
+    #main-header #mobile_menu.et_mobile_menu li li {
+    padding-left: 0;
+   }
+   
+   #main-header #mobile_menu.et_mobile_menu li a, 
+   #main-header #mobile_menu.et_mobile_menu li li a,
+   #main-header #mobile_menu.et_mobile_menu li li li a {
+    padding-left: 20px;
+    padding-right: 20px;
+   }
+   
+   #main-header #mobile_menu.et_mobile_menu .menu-item-has-children .sub-menu-toggle + a {
+    padding-right: 20px;
+   }
+   
+   #main-header #mobile_menu.et_mobile_menu .menu-item-has-children > a {
+    background-color: transparent;
+    font-weight: inherit;
+   }
+   
+   #main-header #mobile_menu.et_mobile_menu li.current-menu-item > a {
+    font-weight: bolder;
+   }
+   
+  /* END NEW MENU ON MOBILE */
