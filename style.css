@@ -128,10 +128,20 @@ Template: Divi
     }
 }
 
-/* Style icons */
+/* Style person paragraphs */
 
 .person ion-icon {
     margin-right: 6px;
+}
+
+
+.contact--fuction {
+    font-family: "Dancing Script";
+}
+  
+.contact--name {
+    font-family: Merriweather;
+    font-weight: bolder;
 }
 
 /* Style the Divi tabs */
