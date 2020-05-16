@@ -169,6 +169,11 @@ ul.et_pb_tabs_controls {
    border: none; 
   }
 
+/* Style the map on the contact page */
+.contact-map #map {
+    margin-top: 0;
+}
+
   /* NEW DIVI MENU ON MOBILE */
   @media screen and (max-width: 980px) {
     .container { 
