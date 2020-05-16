@@ -172,6 +172,7 @@ ul.et_pb_tabs_controls {
 /* Style the map on the contact page */
 .contact-map #map {
     margin-top: 0;
+    position: relative;
 }
 
   /* NEW DIVI MENU ON MOBILE */
