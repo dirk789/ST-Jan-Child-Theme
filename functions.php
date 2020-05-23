@@ -55,7 +55,7 @@ function create_posttype() {
     // Opties voor de custom post type
     array(
       'labels' => array(
-      'name' => __( 'memoriam' ),
+      'name' => __( 'In Memoriam' ),
          'singular_name' => __( 'In Memoriam' )
         ),
         'public' => true,
