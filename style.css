@@ -152,6 +152,12 @@ Template: Divi
     justify-content: space-around;
 }
 
+/* Global shadow */
+.image-shadow {
+    box-shadow:  20px 20px 60px #d9d9d9, 
+             -20px -20px 60px #ffffff;
+}
+
 /* Style the Divi tabs */
 ul.et_pb_tabs_controls {
     background: white;
