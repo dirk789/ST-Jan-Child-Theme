@@ -61,6 +61,8 @@ function create_posttype() {
         'public' => true,
         'has_archive' => false,
         'rewrite' => array('slug' => 'memoriam'),
+        'show_in_rest' => true,
+        'supports' => array('editor'),
        )
       );
       }
