@@ -49,26 +49,25 @@ add_filter('gettext', 'ds_translate_text');
 add_filter('ngettext', 'ds_translate_text');
 
 
-/* hier registreer ik de custom posttype voor "in memoriam" */
-function create_posttype() {
+/* In memoriam CPT */
+function cw_post_type() {
+
   register_post_type( 'memoriam',
-    // Opties voor de custom post type
-    array(
-      'labels' => array(
-      'name' => __( 'In Memoriam' ),
-         'singular_name' => __( 'In Memoriam' )
-        ),
-        'public' => true,
-        'has_archive' => false,
-        'rewrite' => array('slug' => 'memoriam'),
-        'show_in_rest' => true,
-        'supports' => array('editor'),
-       )
-      );
-      }
-      // Voeg actie toe
-      add_action( 'init', 'create_posttype' );
-      /* Einde toevoegen van custom post types */
+      array(
+          'labels' => array(
+              'name' => __( 'In Memoriam' ),
+              'singular_name' => __( 'In Memoriam' )
+          ),
+          'has_archive' => true,
+          'public' => true,
+          'rewrite' => array('slug' => 'memoriam'),
+          'show_in_rest' => true,
+          'supports' => array('editor')
+      )
+  );
+}
+
+add_action( 'init', 'cw_post_type' );
 
 
 ?>
