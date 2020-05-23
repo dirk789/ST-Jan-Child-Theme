@@ -234,6 +234,27 @@ ul.et_pb_tabs_controls {
     content: "\4d";
     z-index: 99999;
    }
+
+   .nav li ul {
+       border-top: none;
+       box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.1), -20px -20px 60px rgba(0, 0, 0, 0.1);
+   }
+
+   #top-menu li li:hover {
+    background: #F4AD6E;
+    color: white;
+  }
+
+  #top-menu li li:hover {
+    background: #F4AD6E;
+    color: white;
+  }
+
+  #top-menu li li > a {
+    font-weight: normal;
+    color: black;
+    font-family: Merriweather, sans-serif;
+  }
    
    /* NESTING MOBILE MENU SETTINGS */
    #et_mobile_nav_menu .mobile_nav.opened .mobile_menu_bar::before {
