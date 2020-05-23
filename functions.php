@@ -49,4 +49,24 @@ add_filter('gettext', 'ds_translate_text');
 add_filter('ngettext', 'ds_translate_text');
 
 
+/* hier registreer ik de custom posttype voor "in memoriam" */
+function create_posttype() {
+  register_post_type( 'memoriam',
+    // Opties voor de custom post type
+    array(
+      'labels' => array(
+      'name' => __( 'memoriam' ),
+         'singular_name' => __( 'In Memoriam' )
+        ),
+        'public' => true,
+        'has_archive' => false,
+        'rewrite' => array('slug' => 'memoriam'),
+       )
+      );
+      }
+      // Voeg actie toe
+      add_action( 'init', 'create_posttype' );
+      /* Einde toevoegen van custom post types */
+
+
 ?>
