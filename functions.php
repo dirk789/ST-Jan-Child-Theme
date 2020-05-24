@@ -48,6 +48,12 @@ function ds_translate_text($translated) {
 add_filter('gettext', 'ds_translate_text');
 add_filter('ngettext', 'ds_translate_text');
 
+//load custom stylesheet
+function my_custom_scripts() {
+  wp_enqueue_script( 'custom-js', get_stylesheet_directory_uri() . '/script.js', array( 'jquery' ),'',true );
+}
+add_action( 'wp_enqueue_scripts', 'my_custom_scripts' );
+
 
 /* In memoriam CPT */
 function cw_post_type() {
