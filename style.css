@@ -23,6 +23,10 @@ Template: Divi
     border-bottom: 1px solid #DDD;
 }
 
+#top-menu li.current-menu-item:hover > a {
+    color: white;
+}
+
 #top-header { 
 	display: none; 
 }
