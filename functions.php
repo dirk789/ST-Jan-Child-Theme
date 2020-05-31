@@ -81,11 +81,15 @@ add_action('wp_dashboard_setup', 'my_custom_dashboard_widgets');
 function my_custom_dashboard_widgets() {
 global $wp_meta_boxes;
  
-wp_add_dashboard_widget('custom_help_widget', 'Theme Support', 'custom_dashboard_help');
+wp_add_dashboard_widget('custom_help_widget', 'Techvandaag - welkom', 'custom_dashboard_help');
 }
  
 function custom_dashboard_help() {
-echo '<p>Welkom bij het ST Jan Dashboard. Deze website wordt onderhouden door Techvandaag. Mocht u vragen hebben over over de werking van deze website, kunt u <a href="https://www.notion.so/techvandaag/0bddd937d13d4692b776ec560d68c46e?v=2be1f34d3f9b42d49c99943b63e6384c">
+echo '
+<div style="text-align: center">
+<img src="https://i.imgur.com/HPVpPwl.jpg" width="180" alt="TVD logo">
+</div>
+<p>Welkom bij het ST Jan Dashboard. Deze website wordt onderhouden door Techvandaag. Mocht u vragen hebben over over de werking van deze website, kunt u <a href="https://www.notion.so/techvandaag/0bddd937d13d4692b776ec560d68c46e?v=2be1f34d3f9b42d49c99943b63e6384c">
 hier de documentatie</a> lezen of een WhatsApp bericht sturen door <a href="https://wa.me/31623256611">hier te klikken</a>.</p>
 
 
