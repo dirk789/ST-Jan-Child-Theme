@@ -68,7 +68,21 @@ function cw_post_type() {
           'public' => true,
           'rewrite' => array('slug' => 'memoriam'),
           'show_in_rest' => true,
-          'supports' => array('editor')
+          'supports' => array('title', 'editor')
+      )
+  );
+	
+	  register_post_type( 'contactpersonen',
+      array(
+          'labels' => array(
+              'name' => __( 'Contactpersonen' ),
+              'singular_name' => __( 'Contactpersonen' )
+          ),
+          'has_archive' => true,
+          'public' => true,
+          'rewrite' => array('slug' => 'contactpersonen'),
+          'show_in_rest' => true,
+          'supports' => array('title')
       )
   );
 }
@@ -98,5 +112,54 @@ hier de documentatie</a> lezen of een WhatsApp bericht sturen door <a href="http
 ';
 }
 
+function contact_function() {
+        $args = array( 'post_type' => 'contactpersonen', 'posts_per_page' => 100);
+        $loop = new WP_Query( $args );
+    
+       	$html .= '<div class="contact">';
+        
+        foreach ($loop->posts as $post)
+        {
+            $html .= '
+			<div class="' . get_field("categorie",$post->ID) . ' person">
+                <h4>' . get_field("functie",$post->ID) . '</h4>
+				<h3>' . $post->post_title .'</h3>';
+				
+				if( get_field("opmerking",$post->ID) ): 
+					$html .= '<p class="contact__opmerking">' . get_field("opmerking",$post->ID) . '</p>';
+				endif;
+
+				$html .= '
+				
+				<ul class="contact__list">';
+			
+				if( get_field("telefoonnummer",$post->ID) ): 
+					$html .= '<li class="contact__phone"><ion-icon name="call-outline"></ion-icon>' . get_field("telefoonnummer",$post->ID) . '</li>';
+				endif;
+
+				if( get_field("telefoonnummer_06",$post->ID) ):
+					$html .= '<li class="contact__phone_06"><ion-icon name="phone-portrait-outline"></ion-icon>' . get_field("telefoonnummer_06",$post->ID) . '</li>';
+				endif;
+			
+				if( get_field("email",$post->ID) ):
+					$html .= '
+				<li class="contact__mail"><ion-icon name="mail-outline"></ion-icon><a href="mailto:' . get_field("email",$post->ID) . '">' . get_field("email",$post->ID) . '</a></li>';
+			
+			endif;
+			
+			$html .=	'
+			
+			</ul>
+			</div>
+            '; 
+    }   
+
+    	$html .= '</div>';
+
+    return $html;
+    wp_reset_query();
+} 
+
+add_shortcode('contact', 'contact_function');
 
 ?>
