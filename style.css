@@ -411,3 +411,22 @@ ul.et_pb_tabs_controls {
     }
    
   /* END NEW MENU ON MOBILE */
+
+
+/* COntact grid */
+.contact {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(18rem, 100%), 1fr));
+  grid-row-gap: 50px;
+}
+
+.contact h3 {
+  font-family: merriweather, serif;
+  font-weight: bold;
+  line-height: 120%;
+}
+
+.contact .contact__list {
+  padding: 0;
+  list-style: none;
+}
