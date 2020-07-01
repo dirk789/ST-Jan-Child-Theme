@@ -8,6 +8,14 @@ Author URI: https://techvandaag.nl
 Template: Divi
 ======================================*/
 
+/* Global colors */
+:root {
+    --green: #e6eef0;
+    --orange: #F2994A;
+    --blue_light: #E6EEF0;
+    --blue_dark: rgba(38,178,255,0.8);
+}
+
 #main-header {
     box-shadow: none;
     -moz-box-shadow: none;
