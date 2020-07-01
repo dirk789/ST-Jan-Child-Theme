@@ -162,4 +162,16 @@ function contact_function() {
 
 add_shortcode('contact', 'contact_function');
 
+
+/* Google zal alle pagina's proberen te indexeren. Ook de pagina's voor contactpersonen. 
+Met dit stukje code zorg ik er voor dat privacy van de contactpersonen wordt gewaarborgd. */
+function noindex_for_companies()
+{
+    if ( is_singular( 'Contactpersonen' ) ) {
+        return '<meta name="robots" content="noindex, follow">';
+    }
+}
+
+add_action('wp_head', 'noindex_for_companies');
+
 ?>
