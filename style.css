@@ -211,6 +211,15 @@ ul.et_pb_tabs_controls {
     border-radius: 10px;
   }
 
+  #top-menu li li:hover a {
+    color: white;
+    transition: none;
+  } 
+  
+  #top-menu li li a {
+    transition: none;
+  }
+
   #top-menu li li > a {
     font-weight: normal;
     color: black;
