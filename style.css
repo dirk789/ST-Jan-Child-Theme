@@ -194,18 +194,21 @@ ul.et_pb_tabs_controls {
 }
 
    .nav li ul {
+       padding: 20px 10px;
+       width: 220px;
        border-top: none;
        box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.1), -20px -20px 60px rgba(0, 0, 0, 0.1);
    }
 
-   #top-menu li li:hover {
-    background: #F4AD6E;
-    color: white;
-  }
+   #top-menu li li {
+    padding: 0;
+   }
+
 
   #top-menu li li:hover {
     background: #F4AD6E;
     color: white;
+    border-radius: 10px;
   }
 
   #top-menu li li > a {
