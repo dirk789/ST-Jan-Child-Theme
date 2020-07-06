@@ -25,6 +25,7 @@ Template: Divi
 
 .home #main-header, .home #main-header .nav li ul, .home .et-search-form, .home #main-header .et_mobile_menu {
     background: white;
+    border-radius: 0 0px 10px 10px;
 }
 
 .et_header_style_split #et-top-navigation {
@@ -194,7 +195,7 @@ ul.et_pb_tabs_controls {
 }
 
    .nav li ul {
-       padding: 20px 10px;
+       padding: 10px;
        width: 220px;
        border-top: none;
        box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.1), -20px -20px 60px rgba(0, 0, 0, 0.1);
