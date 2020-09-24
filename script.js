@@ -5,10 +5,10 @@ jQuery(document).ready(function () {
 
     // Homepage read more button
     jQuery(".more-text").hide();
-    jQuery(".show_hidden").on("click", function () {
-        var txt = jQuery(".content").is(':visible') ? 'Read More' : 'Read Less';
-        jQuery(".show_hidden").text(txt);
-        jQuery(this).next('.more-text').slideToggle(200);
+    jQuery(".show-hidden").on("click", function () {
+        var txt = jQuery(".content").is(':visible') ? 'Lees meer' : 'Lees Minder';
+        jQuery(".show-hidden").text(txt);
+        jQuery('.more-text').slideToggle(200);
     });
 
 });
