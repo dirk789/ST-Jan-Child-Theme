@@ -116,6 +116,15 @@ Template: Divi
     color: #4CBDFC;
 }
 
+/* Border bottom on homepage */
+body #page-container .et_pb_section .et_pb_button.dewiekbutton {
+    background-color: #36c8ad;
+  }
+  
+  body #page-container .dewiekbutton.et_pb_button {
+    border-bottom-color: #25b39a;
+  }
+
 /* Homepage fotos */
 .foto-effect .et_pb_image_1 .et_pb_image_wrap {
     border-bottom-width: 25px;
@@ -195,7 +204,7 @@ ul.et_pb_tabs_controls {
 }
 
    .nav li ul {
-       padding: 10px;
+       padding: 12px 10px;
        width: 220px;
        border-top: none;
        box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.1), -20px -20px 60px rgba(0, 0, 0, 0.1);
