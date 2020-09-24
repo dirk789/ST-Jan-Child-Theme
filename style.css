@@ -125,6 +125,13 @@ body #page-container .et_pb_section .et_pb_button.dewiekbutton {
     border-bottom-color: #25b39a;
   }
 
+  /* Fixed height for blog columns */
+  @media (min-width: 767px) {
+    .et_pb_salvattore_content > .column > article {
+      height: 559px;
+    }
+  }
+
 /* Homepage fotos */
 .foto-effect .et_pb_image_1 .et_pb_image_wrap {
     border-bottom-width: 25px;
