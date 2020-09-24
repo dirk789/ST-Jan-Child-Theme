@@ -6,7 +6,7 @@ jQuery(document).ready(function () {
     // Homepage read more button
     jQuery(".more-text").hide();
     jQuery(".show-hidden").on("click", function () {
-        var txt = jQuery(".content").is(':visible') ? 'Lees meer' : 'Lees Minder';
+        var txt = jQuery(".more-text").is(':visible') ? 'Lees meer' : 'Lees Minder';
         jQuery(".show-hidden").text(txt);
         jQuery('.more-text').slideToggle(200);
     });
