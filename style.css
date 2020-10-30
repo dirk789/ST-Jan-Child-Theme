@@ -32,6 +32,10 @@ Template: Divi
     border-bottom: 1px solid #DDD;
 }
 
+.container.clearfix.et_menu_container {
+    max-width: 100vw;
+}
+
 #top-menu li.current-menu-item:hover > a {
     color: white;
 }
@@ -266,3 +270,4 @@ ul.et_pb_tabs_controls {
   padding: 0;
   list-style: none;
 }
+

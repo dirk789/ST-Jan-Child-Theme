@@ -21,8 +21,13 @@ function divichild_enqueue_scripts() {
 add_action( 'wp_enqueue_scripts', 'divichild_enqueue_scripts' );
 
 
+// Custom Admin footer
+function wpexplorer_remove_footer_admin () {
+	echo '<span id="footer-thankyou">Built with love by <a href="https://techvandaag.nl/" target="_blank">Techvandaag</a></span>';
+}
+add_filter( 'admin_footer_text', 'wpexplorer_remove_footer_admin' );
 
-
+//login logo
 function et_custom_login_logo() {
   // Path URL to your own logo. Method get_stylesheet_directory_uri() will return
   // current theme path URL.
