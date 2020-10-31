@@ -77,7 +77,7 @@ function cw_post_type() {
       )
   );
 	
-	  register_post_type( 'contactpersonen',
+	register_post_type( 'contactpersonen',
       array(
           'labels' => array(
               'name' => __( 'Contactpersonen' ),
@@ -90,6 +90,20 @@ function cw_post_type() {
           'supports' => array('title')
       )
   );
+
+  register_post_type( 'werkgroepn',
+  array(
+      'labels' => array(
+          'name' => __( 'Werkgroep' ),
+          'singular_name' => __( 'Werkgroepen' )
+      ),
+      'has_archive' => true,
+      'public' => true,
+      'rewrite' => array('slug' => 'werkgroep'),
+      'show_in_rest' => true,
+      'supports' => array('title')
+  )
+);
 }
 
 add_action( 'init', 'cw_post_type' );
