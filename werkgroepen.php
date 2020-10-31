@@ -13,14 +13,14 @@ function werkgroep_function() {
             <h4>' . get_field("beschrijving",$post->ID) . '</h4>
             <h3>' . $post->post_title .'</h3>';
 
-            if( have_rows('contactpersonen') ):
+            if( have_rows('contactpersonen',$post->ID) ):
 
                 echo 'yo';
                  // Loop through rows.
-                    while( have_rows('contactpersonen') ) : the_row();
+                    while( have_rows('contactpersonen',$post->ID) ) : the_row();
 
                     // Load sub field value.
-                    $sub_value = get_sub_field('naam');
+                    $sub_value = get_sub_field('naam',$post->ID);
                     // D    o something...
 
                 // End loop.
