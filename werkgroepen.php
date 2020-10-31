@@ -11,12 +11,12 @@ function werkgroep_function() {
         $html .= '
         <div class="' . get_field("beschrijving",$post->ID) . ' person">
             <h4>' . get_field("beschrijving",$post->ID) . '</h4>
-            <h3>' . $post->post_title .'</h3>';
+            <h3>' . $post->post_title .' !?</h3>';
 
             if( have_rows('contactpersonen',$post->ID) ):
 
                  // Loop through rows.
-                    while( have_rows('contactpersonen') ) : the_row();
+                    while( have_rows('contactpersonen',$post->ID) ) : the_row();
 
                     // Load sub field value.
                     $sub_value = get_sub_field('naam');
