@@ -1,7 +1,7 @@
 <?php 
 
 function werkgroep_function() {
-    $args = array( 'post_type' => 'werkgroepen', 'posts_per_page' => 100);
+    $args = array( 'post_type' => 'werkgroep', 'posts_per_page' => 100);
     $loop = new WP_Query( $args );
 
        $html .= '<div class="werkgroepen">';
