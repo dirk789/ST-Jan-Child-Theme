@@ -15,7 +15,6 @@ function werkgroep_function() {
 
             if( have_rows('contactpersonen',$post->ID) ):
 
-                
                  // Loop through rows.
                     while( have_rows('contactpersonen') ) : the_row();
 
