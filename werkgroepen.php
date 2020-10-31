@@ -17,10 +17,10 @@ function werkgroep_function() {
 
                 echo 'yo';
                  // Loop through rows.
-                    while( have_rows('contactpersonen',$post->ID) ) : the_row();
+                    while( have_rows('contactpersonen') ) : the_row();
 
                     // Load sub field value.
-                    $sub_value = get_sub_field('naam',$post->ID);
+                    $sub_value = get_sub_field('naam');
                     // D    o something...
 
                 // End loop.
