@@ -194,4 +194,7 @@ function noindex_for_companies()
 
 add_action('wp_head', 'noindex_for_companies');
 
+//get contactpersonen functie
+include get_template_directory() . '/werkgroepen.php';
+
 ?>
