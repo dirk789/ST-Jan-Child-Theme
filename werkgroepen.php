@@ -21,7 +21,7 @@ function werkgroep_function() {
                     // Load sub field value.
                     $sub_value = get_sub_field('naam');
 
-                    $html .= '<h1>yeaho</h1>';
+                    $html .= '<p>' . get_sub_field('naam') .'</p>';
                     // Do something...
 
                 // End loop.
