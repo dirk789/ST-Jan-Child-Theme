@@ -91,7 +91,7 @@ function cw_post_type() {
       )
   );
 
-  register_post_type( 'werkgroepn',
+  register_post_type( 'werkgroepen',
   array(
       'labels' => array(
           'name' => __( 'Werkgroepen' ),
