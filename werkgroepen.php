@@ -14,6 +14,8 @@ function werkgroep_function() {
             <h3>' . $post->post_title .'</h3>';
 
             if( have_rows('contactpersonen') ):
+
+                echo 'yo';
                  // Loop through rows.
                     while( have_rows('contactpersonen') ) : the_row();
 
