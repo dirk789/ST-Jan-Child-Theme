@@ -9,10 +9,12 @@ function werkgroep_function() {
     foreach ($loop->posts as $post)
     {
         $html .= '
-        <div class="' . get_field("beschrijving",$post->ID) . ' person">
-            <h4>' . get_field("beschrijving",$post->ID) . '</h4>
-            <h3>' . $post->post_title .' !?</h3>';
+        <div id="' . (str_replace(' ', '-', strtolower($post->post_title))) . '" class="werkgroep">
+            <h2>' . $post->post_title . '</h2> 
 
+            <p>' . get_field("beschrijving",$post->ID) . '</p>';
+
+            
             if( have_rows('contactpersonen',$post->ID) ):
 
                  // Loop through rows.
@@ -21,7 +23,29 @@ function werkgroep_function() {
                     // Load sub field value.
                     $sub_value = get_sub_field('naam');
 
-                    $html .= '<p>' . get_sub_field('naam') .'</p>';
+                    
+                    $html .= '
+                    
+                    <h5 class="functie"> ' . get_sub_field('functie') . ' </h5>
+                    <p><strong>' . get_sub_field('naam') .'</strong></p>
+                    
+                    <ul class="werkgroep-contact">';
+                        
+                        if( get_sub_field('telefoonnummer') ) {
+                            $html .= '<li><ion-icon name="call-outline"></ion-icon>' . get_sub_field('telefoonnummer') .'</li>';
+                        };
+
+                        if( get_sub_field('mobiel_nummer') ) {
+                            $html .= '<li><ion-icon name="phone-portrait-outline">' . get_sub_field('mobiel_nummer') .'</li>';
+                        };
+
+                        if( get_sub_field('email') ) {
+                            $html .= '<li><ion-icon name="mail-outline"></ion-icon></ion-icon>' . get_sub_field('email') .'</li>';
+                        };
+
+                    $html .= '
+                    </ul>
+                    ';
                     // Do something...
 
                 // End loop.
