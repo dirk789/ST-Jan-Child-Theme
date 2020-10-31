@@ -94,14 +94,15 @@ function cw_post_type() {
   register_post_type( 'werkgroepn',
   array(
       'labels' => array(
-          'name' => __( 'Werkgroep' ),
-          'singular_name' => __( 'Werkgroepen' )
+          'name' => __( 'Werkgroepen' ),
+          'singular_name' => __( 'Werkgroep' )
       ),
       'has_archive' => true,
       'public' => true,
       'rewrite' => array('slug' => 'werkgroep'),
       'show_in_rest' => true,
-      'supports' => array('title')
+      'supports' => array('title'),
+      'menu_icon' => 'dashicons-image-filter',
   )
 );
 }
