@@ -11,7 +11,22 @@ function werkgroep_function() {
         $html .= '
         <div class="' . get_field("beschrijving",$post->ID) . ' person">
             <h4>' . get_field("beschrijving",$post->ID) . '</h4>
-            <h3>' . $post->post_title .'</h3>
+            <h3>' . $post->post_title .'</h3>';
+
+            if( have_rows('contactpersonen') ):
+                 // Loop through rows.
+                    while( have_rows('contactpersonen') ) : the_row();
+
+                    // Load sub field value.
+                    $sub_value = get_sub_field('naam');
+                    // D    o something...
+
+                // End loop.
+                endwhile;
+
+            endif;
+
+            $html .= '
         </div>
         
         '; 
