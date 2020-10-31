@@ -22,7 +22,7 @@ function werkgroep_function() {
                     $sub_value = get_sub_field('naam');
 
                     $html .= '<h1>yeaho</h1>';
-                    // D    o something...
+                    // Do something...
 
                 // End loop.
                 endwhile;
